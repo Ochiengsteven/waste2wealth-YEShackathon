@@ -1,12 +1,21 @@
 /* eslint-disable no-alert */
 import './style.css';
 import { handleSignIn } from './modules/signIn.js';
+// eslint-disable-next-line no-unused-vars
+import { landingClick, signInClick, signUpClick } from './modules/renderLogin.js';
 import arrow from './assets/arrow.png';
 
 const arrowIcon = new Image();
 arrowIcon.src = arrow;
 const joinbtn = document.querySelector('.join-btn');
 joinbtn.appendChild(arrowIcon);
+
+// add display pages functions
+// document.getElementById('back-btn').addEventListener('click', landingClick);
+document.getElementById('signin-btn').addEventListener('click', signInClick);
+document.getElementById('signup-btn').addEventListener('click', signUpClick);
+document.getElementById('link-signup').addEventListener('click', signUpClick);
+document.getElementById('link-signin').addEventListener('click', signInClick);
 
 document.getElementById('signin-form').addEventListener('submit', (event) => {
   event.preventDefault(); // Prevent form submission
