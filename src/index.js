@@ -1,6 +1,12 @@
 /* eslint-disable no-alert */
 import './style.css';
 import { handleSignIn } from './modules/signIn.js';
+import arrow from './assets/arrow.png';
+
+const arrowIcon = new Image();
+arrowIcon.src = arrow;
+const joinbtn = document.querySelector('.join-btn');
+joinbtn.appendChild(arrowIcon);
 
 document.getElementById('signin-form').addEventListener('submit', (event) => {
   event.preventDefault(); // Prevent form submission
