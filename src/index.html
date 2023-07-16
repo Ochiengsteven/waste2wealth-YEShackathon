@@ -7,6 +7,60 @@
 </head>
 <body>
     <main>
+        <Section id="landing-page">
+            <header>
+                <div class="logo">
+                    <h1>W2W</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li id="signin-btn"><a href="#signin">LogIn</a></li>
+                        <li id="signup-btn"><a href="#signup">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="about">
+                <div class="stats">
+                    <div class="stat-1">
+                        <div>
+                            <p>Waste Collected</p>
+                            <h4>1.2 Tonnes</h4>
+                        </div>
+                        <div>
+                            <p>Location</p>
+                            <h4>Kisumu</h4>
+                        </div>
+                    </div>
+                    <div class="stat-2">
+                        <p>Total Households</p>
+                        <h4>500+</h4>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="title-story">
+                        <span></span>
+                        <h3>Our Story</h3>
+                        <span></span>
+                    </div>
+                    <div class="story-content">
+                        <h5>
+                            Making huge impact in the community 
+                            by collecting waste from households 
+                            and recycling it to make useful products.
+                        </h5>
+                        <p>Founded in 2023 in Kisumu, we are dedicated 
+                            to eliminate as many as possible plastic waste 
+                            and recycle them to make toilet structures. The 
+                            way we do this is by buying plastic waste from the local communities.
+                           This helps in turning trash to cash instantly without hasle!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="join">
+                <button class="join-btn">Join Us</button>
+            </div>
+        </Section>
         <section id="signup">
             <div class="signup-intro">
                 <h3>Welcome to Waste2Wealth
@@ -14,7 +68,7 @@
                 <p>
                     Register an account to continue
                     <br>
-                    Already have an account? <a href="login.html">Login</a>
+                    Already have an account? <a href="" id="link-signin">Login</a>
                 </p>
             </div>
             <form id="signup-form">
@@ -29,13 +83,14 @@
               
                 <button type="submit">Sign Up</button>
             </form>
+            <div class="backpage" id="signup-back"></div>
         </section>
         <section id="signin">
             <div class="signin-intro">
                 <h3>Welcome to Waste2Wealth
                 <br>Sign In to Continue.</h3>
                 <p>
-                    Don't have an account? <a href="#signup">Sign Up</a>
+                    Don't have an account? <a href="#signup" id="link-signup">Sign Up</a>
                     <br>
                     it takes less than a minute.
                 </p>
@@ -51,6 +106,19 @@
               
                 <button type="submit">Sign In</button>
             </form>
+            <div class="backpage" id="login-back">Back</div>
+        </section>
+        <section id="account">
+            <div class="blue"></div>
+            <div class="account-intro">
+                <div class="account-nav">
+                    <div class="faqs">
+                        <h3>FAQ</h3>
+                    </div>
+                    <div class="settings"></div>
+                </div>
+                <div class="welcome"></div>
+            </div>
         </section>
     </main>
 </body>
