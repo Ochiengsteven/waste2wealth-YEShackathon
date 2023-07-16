@@ -8,6 +8,9 @@ import question from './assets/question.png';
 import settings from './assets/settings.png';
 import reload from './assets/reload.png';
 import notification from './assets/notification.png';
+import star from './assets/star.png';
+// import earnings from './assets/earnings.png';
+// import gift from './assets/gift.png';
 
 const arrowIcon = new Image();
 arrowIcon.src = arrow;
@@ -123,3 +126,10 @@ welcomeDiv.innerHTML = `<div class="welcome-note">
 const iconsDiv = document.querySelector('.icons-welcome');
 iconsDiv.appendChild(reloadIcon);
 iconsDiv.appendChild(notificationIcon);
+
+// render user points
+const pointsDiv = document.querySelector('.pts-icon');
+const starIcon = new Image();
+starIcon.src = star;
+pointsDiv.appendChild(starIcon);
+pointsDiv.innerHTML += '<p>Points</p>';
