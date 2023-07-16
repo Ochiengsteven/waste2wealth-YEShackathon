@@ -34,7 +34,7 @@ function handleSignIn() {
     window.location.href = '#dashboard';
   } else {
     // Case: Incorrect password
-    displayErrorMessage('Wrong password!');
+    displayErrorMessage('Wong password!');
     document.getElementById('password').classList.add('error');
   }
 }

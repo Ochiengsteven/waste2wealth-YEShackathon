@@ -1,6 +1,21 @@
 /* eslint-disable no-alert */
 import './style.css';
 import { handleSignIn } from './modules/signIn.js';
+import { landingClick, signInClick, signUpClick } from './modules/renderLogin.js';
+import arrow from './assets/arrow.png';
+import back from './assets/back.png';
+
+const arrowIcon = new Image();
+arrowIcon.src = arrow;
+const joinbtn = document.querySelector('.join-btn');
+joinbtn.appendChild(arrowIcon);
+
+// add display pages functions
+document.getElementById('signin-btn').addEventListener('click', signInClick);
+document.getElementById('signup-btn').addEventListener('click', signUpClick);
+document.querySelector('.join-btn').addEventListener('click', signUpClick);
+document.getElementById('link-signup').addEventListener('click', signUpClick);
+document.getElementById('link-signin').addEventListener('click', signInClick);
 
 document.getElementById('signin-form').addEventListener('submit', (event) => {
   event.preventDefault(); // Prevent form submission
@@ -61,3 +76,19 @@ document.getElementById('signup-form').addEventListener('submit', (event) => {
 
   alert('Registration successful!');
 });
+
+// go back to landing page
+const backpageDiv1 = document.querySelector('#login-back');
+const backp = document.createElement('p');
+backp.innerHTML = 'Back';
+const backIcon = new Image();
+backIcon.src = back;
+backpageDiv1.appendChild(backIcon);
+backpageDiv1.appendChild(backp);
+
+const backpageDiv2 = document.getElementById('signup-back');
+backpageDiv2.appendChild(backIcon);
+backpageDiv2.appendChild(backp);
+
+backpageDiv1.addEventListener('click', landingClick);
+backpageDiv2.addEventListener('click', landingClick);
