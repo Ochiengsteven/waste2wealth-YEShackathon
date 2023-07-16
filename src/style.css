@@ -9,7 +9,7 @@ body {
   background-color: #f5f5f5;
 }
 
-/* styling sign up sign in*/
+/* styling sign up sign in */
 #signup,
 #signin {
   width: 100%;
@@ -138,6 +138,23 @@ button {
   margin-bottom: 10px;
 }
 
+.backpage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #030101;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.backpage p{
+  margin-left: 10px;
+}
+
 /* styling landing page */
 .about {
   width: 100%;
@@ -159,7 +176,7 @@ button {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #A8CD66;
+  color: #a8cd66;
 }
 
 .stats p {
@@ -189,6 +206,7 @@ button {
 .title-story h3 {
   font-size: 1.8rem;
   font-weight: 600;
+
   /* margin-bottom: 20px; */
   padding: 0 2% 0 2%;
 }
@@ -199,21 +217,21 @@ button {
 }
 
 .story-content {
-    padding-top: 2vh;
+  padding-top: 2vh;
 }
 
 .story-content h5 {
-    font-size: 1.9rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #797470;
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #797470;
 }
 
 .story-content p {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #030101;
-    margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #030101;
+  margin-bottom: 10px;
 }
 
 .join {
@@ -231,7 +249,7 @@ button {
 
 .join button {
   padding: 5px 7px;
-  background:none;
+  background: none;
   color: #fff;
   cursor: pointer;
   border: 2px solid #fff;
@@ -242,7 +260,7 @@ button {
 }
 
 .join-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
