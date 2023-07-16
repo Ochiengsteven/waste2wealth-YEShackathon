@@ -4,9 +4,29 @@ import { handleSignIn } from './modules/signIn.js';
 import { landingClick, signInClick, signUpClick } from './modules/renderLogin.js';
 import arrow from './assets/arrow.png';
 import back from './assets/back.png';
+import question from './assets/question.png';
+import settings from './assets/settings.png';
+import reload from './assets/reload.png';
+import notification from './assets/notification.png';
 
 const arrowIcon = new Image();
 arrowIcon.src = arrow;
+const questionIcon = new Image();
+questionIcon.src = question;
+const questionDiv = document.querySelector('.faqs');
+questionDiv.appendChild(questionIcon);
+
+const reloadIcon = new Image();
+reloadIcon.src = reload;
+
+const notificationIcon = new Image();
+notificationIcon.src = notification;
+
+const settingsIcon = new Image();
+settingsIcon.src = settings;
+const settingsDiv = document.querySelector('.settings');
+settingsDiv.appendChild(settingsIcon);
+
 const joinbtn = document.querySelector('.join-btn');
 joinbtn.appendChild(arrowIcon);
 
@@ -92,3 +112,14 @@ backpageDiv2.appendChild(backp);
 
 backpageDiv1.addEventListener('click', landingClick);
 backpageDiv2.addEventListener('click', landingClick);
+
+// render welcome note
+const welcomeDiv = document.querySelector('.welcome');
+welcomeDiv.innerHTML = `<div class="welcome-note">
+                         <p>Welcome</p>
+                         <h3>Steven</h3>
+                        </div>
+                        <div class="icons-welcome"></div>`;
+const iconsDiv = document.querySelector('.icons-welcome');
+iconsDiv.appendChild(reloadIcon);
+iconsDiv.appendChild(notificationIcon);

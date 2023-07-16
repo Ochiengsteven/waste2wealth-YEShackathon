@@ -20,6 +20,7 @@ body {
 #landing-page {
   width: 100%;
   height: 100vh;
+  display: none; /* to be removed */
 }
 
 nav ul {
@@ -151,7 +152,7 @@ button {
   cursor: pointer;
 }
 
-.backpage p{
+.backpage p {
   margin-left: 10px;
 }
 
@@ -263,4 +264,80 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* account styling */
+#account {
+  width: 100%;
+  height: 100vh;
+}
+
+.blue {
+  width: 100%;
+  height: 25vh;
+  background: #0063da;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.account-nav {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: absolute;
+  top: 5px;
+  color: #fff;
+}
+
+.faqs {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.faqs img {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+
+.faqs h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.welcome {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: absolute;
+  top: 5vh;
+  color: #fff;
+}
+
+.welcome h3 {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.welcome p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.welcome img:nth-child(1) {
+  margin: 0 10px 0 0;
 }
