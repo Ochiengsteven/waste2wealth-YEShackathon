@@ -9,8 +9,10 @@ import settings from './assets/settings.png';
 import reload from './assets/reload.png';
 import notification from './assets/notification.png';
 import star from './assets/star.png';
-// import earnings from './assets/earnings.png';
-// import gift from './assets/gift.png';
+import earnings from './assets/earnings.png';
+import gift from './assets/gift.png';
+import next from './assets/next.png';
+import rank from './assets/rank.png';
 
 const arrowIcon = new Image();
 arrowIcon.src = arrow;
@@ -133,3 +135,56 @@ const starIcon = new Image();
 starIcon.src = star;
 pointsDiv.appendChild(starIcon);
 pointsDiv.innerHTML += '<p>Points</p>';
+
+// render cards
+const earningsIcon = new Image();
+earningsIcon.src = earnings;
+const giftIcon = new Image();
+giftIcon.src = gift;
+const nextIcon = new Image();
+nextIcon.src = next;
+const cards = [
+  {
+    img: earningsIcon.src,
+    title: 'Earn',
+    next: nextIcon.src,
+  },
+  {
+    img: giftIcon.src,
+    title: 'Redeem',
+    next: nextIcon.src,
+  },
+];
+
+const cardsDiv = document.querySelector('.cards');
+cards.forEach((card) => {
+  cardsDiv.innerHTML += `<div class="card">
+                            <div class="icon">
+                              <img src=${card.img} alt="earnings" />
+                              <h3>${card.title}</h3>
+                            </div>
+                            <div class="next">
+                              <img src=${card.next} alt="next" />
+                            </div>
+                          </div>`;
+});
+
+// render levels
+const rankIcon = new Image();
+rankIcon.src = rank;
+const levelsDiv = document.querySelector('.level');
+levelsDiv.innerHTML = `<div class="icon">
+                            <img src=${rankIcon.src} alt="star" />
+                        </div>
+                        <div>
+                          <div class="infos">
+                            <h3>Bronze</h3><p>(Level 1)</p>
+                          </div>
+                          <div>
+                            <p>1000 points to Silver</p>
+                            <progress id="progress-bar" value="2000" max="3000" style="height: 4px; background-color: green;"></progress>
+                          </div>
+                        </div>
+                        <div class="next">
+                          <img src=${nextIcon.src} alt="next" />
+                        </div>`;

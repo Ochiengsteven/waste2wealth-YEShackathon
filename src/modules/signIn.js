@@ -1,5 +1,17 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable no-use-before-define */
+function accountClick() {
+  const landingPage = document.getElementById('landing-page');
+  const signInPage = document.getElementById('signin');
+  const signUpPage = document.getElementById('signup');
+  const accountPage = document.getElementById('account');
+
+  landingPage.style.display = 'none';
+  signInPage.style.display = 'none';
+  signUpPage.style.display = 'none';
+  accountPage.style.display = 'block';
+}
+
 function handleSignIn() {
   // Get form values
   const email = document.getElementById('sign-in-email').value;
@@ -31,10 +43,10 @@ function handleSignIn() {
   if (user.password === password) {
     // Case: Correct email and password combination
     // Redirect to dashboard section
-    window.location.href = '#dashboard';
+    accountClick();
   } else {
     // Case: Incorrect password
-    displayErrorMessage('Wong password!');
+    displayErrorMessage('Wrong password!');
     document.getElementById('password').classList.add('error');
   }
 }
