@@ -2,6 +2,7 @@
 import './style.css';
 import { handleSignIn } from './modules/signIn.js';
 import { landingClick, signInClick, signUpClick } from './modules/renderLogin.js';
+import { pickUpClick, backpickClick } from './modules/pickup.js';
 import arrow from './assets/arrow.png';
 import back from './assets/back.png';
 import question from './assets/question.png';
@@ -153,17 +154,19 @@ const cards = [
     img: earningsIcon.src,
     title: 'Earn',
     next: nextIcon.src,
+    id: 'earn',
   },
   {
     img: giftIcon.src,
-    title: 'Redeem',
+    title: 'Withdraw',
     next: nextIcon.src,
+    id: 'withdraw',
   },
 ];
 
 const cardsDiv = document.querySelector('.cards');
 cards.forEach((card) => {
-  cardsDiv.innerHTML += `<div class="card">
+  cardsDiv.innerHTML += `<div class="card" id="${card.id}">
                             <div class="icon">
                               <img src=${card.img} alt="earnings" />
                               <h3>${card.title}</h3>
@@ -221,3 +224,21 @@ locationDiv.appendChild(locationImg);
 const dateImg = new Image();
 dateImg.src = date;
 dateDiv.appendChild(dateImg);
+
+// render earnings navigations
+blackDiv.addEventListener('click', backpickClick);
+const orderDiv = document.querySelector('#earn');
+orderDiv.addEventListener('click', pickUpClick);
+
+// settings
+const nav = document.querySelector('.settings');
+const menu = document.querySelector('#menu');
+const closeIcon = document.querySelector('#close-icon');
+
+nav.addEventListener('click', () => {
+  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+});
+
+closeIcon.addEventListener('click', () => {
+  menu.style.display = 'none';
+});

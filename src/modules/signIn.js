@@ -5,11 +5,13 @@ function accountClick() {
   const signInPage = document.getElementById('signin');
   const signUpPage = document.getElementById('signup');
   const accountPage = document.getElementById('account');
+  const pickPage = document.getElementById('order');
 
   landingPage.style.display = 'none';
   signInPage.style.display = 'none';
   signUpPage.style.display = 'none';
   accountPage.style.display = 'block';
+  pickPage.style.display = 'none';
 }
 
 function handleSignIn() {

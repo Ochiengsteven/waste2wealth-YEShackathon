@@ -537,3 +537,42 @@ button {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* add */
+#menu {
+  background: #fff;
+  width: 40vw;
+  height: 20vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#close-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  list-style: none;
+  color: #030101;
+}
+
+.settings ul {
+  padding: 25px 0 0 10px;
+}
+
+.settings li {
+  margin: 10px 0;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
