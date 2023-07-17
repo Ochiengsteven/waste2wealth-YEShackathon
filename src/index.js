@@ -16,6 +16,8 @@ import rank from './assets/rank.png';
 import map from './assets/map.jpg';
 import gps from './assets/gps.png';
 import black from './assets/black.png';
+import location from './assets/location.png';
+import date from './assets/date.png';
 
 const arrowIcon = new Image();
 arrowIcon.src = arrow;
@@ -209,3 +211,13 @@ const blackDiv = document.querySelector('.navico-1');
 const blackImg = new Image();
 blackImg.src = black;
 blackDiv.appendChild(blackImg);
+
+// render location and date
+const locationDiv = document.querySelector('#location');
+const dateDiv = document.querySelector('#date');
+const locationImg = new Image();
+locationImg.src = location;
+locationDiv.appendChild(locationImg);
+const dateImg = new Image();
+dateImg.src = date;
+dateDiv.appendChild(dateImg);
