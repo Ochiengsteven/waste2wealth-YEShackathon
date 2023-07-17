@@ -1,2 +1,6 @@
 # Waste2Wealth
-<iframe width="894" height="503" src="https://www.youtube.com/embed/NXgNtafDWeY" title="The Witcher: Season 3 | Official Trailer #2 | Netflix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+## Demo Video
+
+[![Demo Video](https://img.youtube.com/vi/NXgNtafDWeY/0.jpg)](https://www.youtube.com/watch?v=NXgNtafDWeY)
+
+Click the image above or follow this link to watch the demo video.
