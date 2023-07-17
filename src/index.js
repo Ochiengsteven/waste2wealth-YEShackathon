@@ -13,6 +13,9 @@ import earnings from './assets/earnings.png';
 import gift from './assets/gift.png';
 import next from './assets/next.png';
 import rank from './assets/rank.png';
+import map from './assets/map.jpg';
+import gps from './assets/gps.png';
+import black from './assets/black.png';
 
 const arrowIcon = new Image();
 arrowIcon.src = arrow;
@@ -188,3 +191,21 @@ levelsDiv.innerHTML = `<div class="icon">
                         <div class="next">
                           <img src=${nextIcon.src} alt="next" />
                         </div>`;
+
+// render map
+const mapDiv = document.querySelector('.map');
+const mapImg = new Image();
+mapImg.src = map;
+mapDiv.appendChild(mapImg);
+
+// render gps
+const gpsDiv = document.querySelector('.navico-2');
+const gpsImg = new Image();
+gpsImg.src = gps;
+gpsDiv.appendChild(gpsImg);
+
+// render black
+const blackDiv = document.querySelector('.navico-1');
+const blackImg = new Image();
+blackImg.src = black;
+blackDiv.appendChild(blackImg);
