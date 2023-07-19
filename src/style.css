@@ -12,7 +12,8 @@ body {
 /* styling sign up sign in */
 #signup,
 #signin,
-#order {
+#order,
+#rwds {
   width: 100%;
   max-height: 100vh;
   display: none;
@@ -471,7 +472,8 @@ button {
 }
 
 .navico-1,
-.navico-2 {
+.navico-2,
+.navico-4 {
   height: 65%;
   width: 50px;
   display: flex;
@@ -683,4 +685,38 @@ a {
     right: 3%;
     top: 3%;
 }
+}
+/* end */
+
+.With-title {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  position: absolute;
+  top: 5vh;
+  color: #ebe7e7;
+  text-align: center;
+}
+
+.With-title h3 {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.remove-m {
+  width: 100%;
+  position: absolute;
+  top: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blnce {
+  font-size: 2.5rem;
+  font-weight: 800;
 }

@@ -2,7 +2,9 @@
 import './style.css';
 import { handleSignIn } from './modules/signIn.js';
 import { landingClick, signInClick, signUpClick } from './modules/renderLogin.js';
-import { pickUpClick, backpickClick } from './modules/pickup.js';
+import {
+  pickUpClick, backpickClick, withdrawClick, backwithdrawClick,
+} from './modules/pickup.js';
 import arrow from './assets/arrow.png';
 import back from './assets/back.png';
 import question from './assets/question.png';
@@ -123,7 +125,7 @@ backpageDiv2.appendChild(backIcon);
 backpageDiv2.appendChild(backp);
 
 backpageDiv1.addEventListener('click', landingClick);
-backpageDiv2.addEventListener('click', landingClick);
+backpageDiv2.addEventListener('click', backwithdrawClick);
 
 // render welcome note
 const welcomeDiv = document.querySelector('.welcome');
@@ -161,7 +163,7 @@ const cards = [
     img: giftIcon.src,
     title: 'Withdraw',
     next: nextIcon.src,
-    id: 'withdraw',
+    id: 'withdraw-card',
   },
 ];
 
@@ -216,6 +218,9 @@ const blackImg = new Image();
 blackImg.src = black;
 blackDiv.appendChild(blackImg);
 
+const blackDiv2 = document.querySelector('.navico-4');
+blackDiv2.appendChild(blackImg);
+
 // render location and date
 const locationDiv = document.querySelector('#location');
 const dateDiv = document.querySelector('#date');
@@ -228,6 +233,7 @@ dateDiv.appendChild(dateImg);
 
 // render earnings navigations
 blackDiv.addEventListener('click', backpickClick);
+blackDiv2.addEventListener('click', backpickClick);
 const orderDiv = document.querySelector('#earn');
 orderDiv.addEventListener('click', pickUpClick);
 
@@ -256,3 +262,7 @@ openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
 dashboard.addEventListener('click', close);
 history.addEventListener('click', logOut);
+
+// render withdraw
+const withdrawDiv = document.querySelector('#withdraw-card');
+withdrawDiv.addEventListener('click', withdrawClick);
