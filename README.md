@@ -90,7 +90,7 @@ Any static assets, like images, can be placed in the `src/assets/` directory.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
->this is the link to my live demo of the WattSmart app [here](https://64b7ccbd22628000b8767684--celadon-kleicha-f0a66b.netlify.app/#signup)
+>this is the link to my live demo of the Waste2Wealth app [here](https://64b7ccbd22628000b8767684--celadon-kleicha-f0a66b.netlify.app/#signup)
 
 ## 📸 Screenshots <a name="screenshots"></a>
 
