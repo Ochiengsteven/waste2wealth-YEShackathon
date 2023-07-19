@@ -94,6 +94,20 @@ Any static assets, like images, can be placed in the `src/assets/` directory.
 
 ## 📸 Screenshots <a name="screenshots"></a>
 
+<!-- Row 1 -->
+<div align="center">
+    <img src="images/landing.jpg" alt="landing" width="300" />
+    <img src="images/login.jpg" alt="login" width="300" />
+    <img src="images/account.jpg" alt="account" width="300" />
+</div>
+
+<!-- Row 2 -->
+<div align="center">
+    <img src="images/withdraw.jpg" alt="withdraw" width="300" />
+    <img src="images/order.jpg" alt="order" width="300" />
+    <img src="images/nav-show.jpg" alt="nav-show" width="300" />
+</div>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
