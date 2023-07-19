@@ -125,7 +125,7 @@ backpageDiv2.appendChild(backIcon);
 backpageDiv2.appendChild(backp);
 
 backpageDiv1.addEventListener('click', landingClick);
-backpageDiv2.addEventListener('click', backwithdrawClick);
+backpageDiv2.addEventListener('click', landingClick);
 
 // render welcome note
 const welcomeDiv = document.querySelector('.welcome');

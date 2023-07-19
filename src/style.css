@@ -673,7 +673,6 @@ a {
 
   .menuItems {
     flex-direction: column;
-    padding-top: 20%;
   }
 
   .fa-bars:before, .fa-navicon:before {
