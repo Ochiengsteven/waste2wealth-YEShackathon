@@ -96,7 +96,7 @@ Any static assets, like images, can be placed in the `src/assets/` directory.
 
 <!-- Row 1 -->
 <div align="center">
-    <img src="images/landing.jpg" alt="landing" width="300" />
+    <img src="[images/landing.jpg](https://github.com/Ochiengsteven/Waste2Wealth/blob/account/src/assets/screenshots/landing-page.png)" alt="landing" width="300" />
     <img src="images/login.jpg" alt="login" width="300" />
     <img src="images/account.jpg" alt="account" width="300" />
 </div>
