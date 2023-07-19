@@ -130,12 +130,14 @@ In order to run this project you need:
 Clone this repository to your desired folder or download the Zip folder:
 
 ```
-https://github.com/Ochiengsteven/WattSmart.git
+https://github.com/Ochiengsteven/waste2wealth-YEShackathon
+.git
 ```
 
 - Navigate to the location of the folder in your machine:
 
-**``you@your-Pc-name:~$ cd Portfolio``**
+**``you@your-Pc-name:~$ cd waste2wealth-YEShackathon
+``**
 
 ### Install
 
@@ -150,7 +152,7 @@ npm install
 To run the project, follow these instructions:
 
 - After Cloning this repo to your local machine.
-- Open the `index.html` in your browser.
+- Open the `./dist/index.html` in your browser.
 
 ### Run tests
 
@@ -172,7 +174,7 @@ npx eslint .
 ### Deployment <a name="deployment"></a>
 
 You can deploy this project using: [Netlify](https://www.netlify.com/),
-- I used Netlify to deploy my website. (https://ochiengsteven.github.io/)
+- I used Netlify to deploy my website. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
