@@ -23,7 +23,7 @@
 
 # 📖 Waste2Wealth - Turning Trash to Cash <a name="about-project"></a>
 
-**Waste2Wealth** is a web application designed to address the growing issue of plastic waste while providing an innovative solution to incentivize households to participate in waste collection. The app aims to empower communities to actively contribute to a cleaner environment and sustainable waste management.
+**Waste2Wealth** is a web application designed to address the growing issue of plastic waste and sustainable energy while providing an innovative solution to incentivize households to participate in waste collection. The collected plastic are used to make fuel briquettes and toilet structures. The app aims to empower communities to actively contribute to a cleaner energy, environment and sustainable waste management.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -40,6 +40,7 @@ Waste2Wealth promotes environmental sustainability by actively engaging individu
     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML5</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">CSS3</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">JAVASCRIPT</a></li>
+    <li><a href="https://webpack.js.org/guides/getting-started/#basic-setup">WEBPACK</a></li>
   </ul>
 </details>
 
@@ -89,7 +90,7 @@ Any static assets, like images, can be placed in the `src/assets/` directory.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
->this is the link to my live demo of the WattSmart app [here](https://gleeful-souffle-ba388b.netlify.app/)
+>this is the link to my live demo of the WattSmart app [here](https://64b7ccbd22628000b8767684--celadon-kleicha-f0a66b.netlify.app/#signup)
 
 ## 📸 Screenshots <a name="screenshots"></a>
 
