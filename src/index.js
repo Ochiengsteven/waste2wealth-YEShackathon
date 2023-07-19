@@ -233,7 +233,7 @@ dateDiv.appendChild(dateImg);
 
 // render earnings navigations
 blackDiv.addEventListener('click', backpickClick);
-blackDiv2.addEventListener('click', backpickClick);
+blackDiv2.addEventListener('click', backwithdrawClick);
 const orderDiv = document.querySelector('#earn');
 orderDiv.addEventListener('click', pickUpClick);
 
