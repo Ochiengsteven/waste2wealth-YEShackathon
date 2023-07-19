@@ -11,7 +11,8 @@ body {
 
 /* styling sign up sign in */
 #signup,
-#signin {
+#signin,
+#order {
   width: 100%;
   max-height: 100vh;
   display: none;
@@ -270,7 +271,7 @@ button {
 #account {
   width: 100%;
   height: 100vh;
-  display: none;
+  /* display: none; */
 }
 
 .blue {
@@ -556,6 +557,7 @@ button {
   top: 5px;
   right: 5px;
   cursor: pointer;
+  font-size: 1.8rem;
 }
 
 .settings {
@@ -575,4 +577,110 @@ button {
   list-style: none;
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+/* start */
+.menuItems {
+  display: flex;
+  /* padding-top: 15%; */
+  list-style: none;
+}
+
+.menu {
+  font-family: Inter, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #505f79;
+}
+
+.settings {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+  /* padding: 15px; */
+}
+
+.settings #mainMenu {
+  display: flex;
+}
+
+.settings #mainMenu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #505f79;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.settings #mainMenu li a:hover {
+  color: #009879;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.settings .openMenu {
+  display: none;
+  font-size: 2rem;
+  /* margin: 20px; */
+  cursor: pointer;
+}
+
+.closeMenu {
+  color: #67798e;
+}
+
+.settings #mainMenu .closeMenu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .settings #mainMenu {
+    height: 25vh;
+    border-radius: 20px 0 0 20px;
+    position: fixed;
+    top: 0;
+    left: 45%;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    transition:  1s ease;
+    display: none;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .settings #mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .settings .openMenu {
+    display: block;
+  }
+
+  .menuItems {
+    flex-direction: column;
+    padding-top: 20%;
+  }
+
+  .fa-bars:before, .fa-navicon:before {
+    content: "\f0c9";
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
 }

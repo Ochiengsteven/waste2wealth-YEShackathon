@@ -35,6 +35,7 @@ notificationIcon.src = notification;
 
 const settingsIcon = new Image();
 settingsIcon.src = settings;
+settingsIcon.classList.add('openMenu');
 const settingsDiv = document.querySelector('.settings');
 settingsDiv.appendChild(settingsIcon);
 
@@ -231,14 +232,27 @@ const orderDiv = document.querySelector('#earn');
 orderDiv.addEventListener('click', pickUpClick);
 
 // settings
-const nav = document.querySelector('.settings');
-const menu = document.querySelector('#menu');
-const closeIcon = document.querySelector('#close-icon');
+const mainMenu = document.querySelector('#mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const dashboard = document.querySelector('a[href="#dashboard"]');
+const history = document.querySelector('a[href="#history"]');
 
-nav.addEventListener('click', () => {
-  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-});
+function show() {
+  mainMenu.style.display = 'flex';
+  mainMenu.style.top = '0';
+}
 
-closeIcon.addEventListener('click', () => {
-  menu.style.display = 'none';
-});
+function close() {
+  mainMenu.style.top = '-100%';
+}
+
+function logOut() {
+  mainMenu.style.top = '-100%';
+  landingClick();
+}
+
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+dashboard.addEventListener('click', close);
+history.addEventListener('click', logOut);
