@@ -95,17 +95,17 @@ Any static assets, like images, can be placed in the `src/assets/` directory.
 ## 📸 Screenshots <a name="screenshots"></a>
 
 <!-- Row 1 -->
-<div align="center">
+<div style="display: flex; justify-content: center; max-height: 400px;">
     <img src="https://github.com/Ochiengsteven/Waste2Wealth/blob/account/src/assets/screenshots/landing-page.png" alt="landing" width="300" />
-    <img src="images/login.jpg" alt="login" width="300" />
-    <img src="images/account.jpg" alt="account" width="300" />
+    <img src="https://github.com/Ochiengsteven/Waste2Wealth/blob/account/src/assets/screenshots/login.png" alt="login" width="300" />
+    <img src="https://github.com/Ochiengsteven/Waste2Wealth/blob/account/src/assets/screenshots/account.png" alt="account" width="300" />
 </div>
 
 <!-- Row 2 -->
-<div align="center">
-    <img src="images/withdraw.jpg" alt="withdraw" width="300" />
-    <img src="images/order.jpg" alt="order" width="300" />
-    <img src="images/nav-show.jpg" alt="nav-show" width="300" />
+<div style="display: flex; justify-content: center; max-height: 400px;">
+    <img src="https://github.com/Ochiengsteven/Waste2Wealth/blob/account/src/assets/screenshots/withdraw.png" alt="withdraw" width="300" />
+    <img src="https://github.com/Ochiengsteven/Waste2Wealth/blob/account/src/assets/screenshots/order-pick.png" alt="order" width="300" />
+    <img src="https://github.com/Ochiengsteven/Waste2Wealth/blob/account/src/assets/screenshots/nav-show.png" alt="nav-show" width="300" />
 </div>
 
 
